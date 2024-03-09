@@ -24,7 +24,7 @@ def run_remote_server_R():
             elif (len(data_remote) == 4):
                 sock_pynq.sendall(bytes(data_remote, 'utf-8'))
                 data_remote = list(data_remote)
-                print("Sent the following list to Ramin's Pynq Board: ",data)
+                print("Sent the following list to Ramin's Pynq Board: ",data_remote)
         sock_pynq.close()
     print("Connors has terminated the program.")
 
